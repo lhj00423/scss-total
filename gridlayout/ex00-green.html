@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+   @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "맑은 고딕", sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+  height: 100vh;
+}
+
+#wrap{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 80px auto 100px;
+    height: 100%;
+}
+
+#header{
+    display: grid;
+    grid-template-columns: 10% 40%;
+    justify-content: space-between;
+    align-content:center ;
+}
+#header ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#contents h2{
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#maincotents ul{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: space-between;
+    text-align: center;
+}
+
+#maincotents li{
+    border: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+#mainnotice li{
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: 60% 10%;
+    justify-content: space-between;
+}
+
+body #header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li{
+    list-style: none;
+}
+    </style>    
+</head>
+<body>
+    <body>
+        <div id="wrap">
+        <div id="header" >
+            <h1>Green</h1>
+            <ul id="mm" class="menu">
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li class="rightnone"><a href="#">menu4</a></li>
+        </ul>
+        </div>
+        <div id="contents">
+            <div id="maincotents">
+                <h2>메인 컨텐츠 01</h2>
+                <ul>
+                    <li class="mr5">
+                        <h3>작은 제목입니다.</h3>
+                        글적는 부분입니다.<br>
+                        <span>2022.10.12</span>
+                    </li>
+                    <li class="mr5">
+                        <h3>작은 제목입니다.</h3>
+                        글적는 부분입니다.<br>
+                        <span>2022.10.12</span>
+                    </li>
+                    <li>
+                        <h3>작은 제목입니다.</h3>
+                        글적는 부분입니다.<br>
+                        <span>2022.10.12</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="mainnotice">
+                <h2>공지사항</h2>
+                <ul class="soso">
+                    <li class="soso"><p>그린 컴퓨터 아카데미 소식</p></li>
+                    <li class="soso"><p>그린 컴퓨터 아카데미 소식</p></li>
+                    <li class="soso"><p>그린 컴퓨터 아카데미 소식</p></li>
+                    <li><p>그린 컴퓨터 아카데미 소식</p></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            <address>주소 : 서울특별시 용산구 한강대로 대표이사: 그린 사업자등록번호 : 110-12-12345 통신판매신고 :<br>제 2020-서울용산-000호
+            </address>
+            <h1>Green</h1> 
+        </div>
+        </div>
+    </body>
+    </html>
+</body>
+</html>
